@@ -1,5 +1,9 @@
 # weather-application
 
+Small weather application using VueJS, Bootstrap and axios for the API calls
+
+Enter a city, and you will know the weather and temperature
+
 ## Project setup
 ```
 npm install
@@ -15,10 +19,3 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -19,6 +19,9 @@ export default {
 
 
 
-<style scoped>
-
+<style>
+ body {
+   background: #C9D6FF;
+   background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+ }
 </style>
