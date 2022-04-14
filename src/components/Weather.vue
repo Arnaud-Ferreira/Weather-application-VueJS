@@ -36,11 +36,23 @@ import axios from 'axios'
          return {
              request: '',
              weather: undefined,
-             api_code: '2e0186d2418817dc5d083ed3d2e66647',
-             url_search: 'api.openweathermap.org/data/2.5/weather?'
+             api_code: '3604758d7467cfd1a0f161a64027236f',
+             url_search: 'https://api.openweathermap.org/data/2.5/weather?'
          }
      },
-     method: {
+     methods: {
+         goWeather(event){
+             if(event.key == "Enter") {
+
+                 axios
+                 .get(`${this.url_search}q=${this.request}&units=metric&
+                 APPID=${this.api_code}&lang=fr`)
+                 .then(response => {
+                     this.weather = response.data;
+                 })
+                 this.request = ''
+             }
+         }
      }
  }
 
