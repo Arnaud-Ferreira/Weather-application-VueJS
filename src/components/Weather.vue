@@ -19,7 +19,7 @@
         </div>
 
         <div class="card text-center p-5">
-            <p class="showed-text">Temperature : {{ weather.main.temp }}°</p>
+            <p class="showed-text">Temperature : {{ weather.main.temp.toFixed() }}°</p>
             <p class="showed-text">Weather conditions : {{ weather.weather[0].description }}</p>
         </div>
     </div>
