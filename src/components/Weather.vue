@@ -28,9 +28,20 @@
 
 
 <script>
+import axios from 'axios'
 
  export default {
      name: 'WeatherComp',
+     data() {
+         return {
+             request: '',
+             weather: undefined,
+             api_code: '2e0186d2418817dc5d083ed3d2e66647',
+             url_search: 'api.openweathermap.org/data/2.5/weather?'
+         }
+     },
+     method: {
+     }
  }
 
 </script>
