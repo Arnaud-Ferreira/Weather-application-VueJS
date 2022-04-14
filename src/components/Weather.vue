@@ -14,13 +14,13 @@
             >
         </div>
 
-        <div class="w75 mb-4">
-            <h3 class="text-center">Position : Paris</h3>
+        <div class="w75 mb-4" v-if="weather">
+            <h3 class="text-center">Location : {{ weather.name }}</h3>
         </div>
 
         <div class="card text-center p-5">
-            <p class="showed-text">Temperature : 20°</p>
-            <p class="showed-text">Weather conditions : Cloudy</p>
+            <p class="showed-text">Temperature : {{ weather.main.temp }}°</p>
+            <p class="showed-text">Weather conditions : {{ weather.weather[0].description }}</p>
         </div>
     </div>
 </template>
@@ -61,5 +61,11 @@ import axios from 'axios'
 
 
 <style scoped>
+
+.showed-text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+}
 
 </style>
