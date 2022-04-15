@@ -17,5 +17,5 @@ npm run serve
 ```
 
 ## Preview 
-![](result.gif)
+![](Result.gif)
 
