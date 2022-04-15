@@ -63,6 +63,7 @@ import axios from 'axios'
 
 h1 {
     text-align: center;
+    font-size: 2.2rem;
 }
 
 label {
